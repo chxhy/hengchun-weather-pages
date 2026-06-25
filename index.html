@@ -68,7 +68,7 @@
 
 <div class="container">
     <h2>恆春鎮天氣預報</h2>
-    <div class="timestamp">報表生成時間：2026-06-24 21:27:24</div>
+    <div class="timestamp">報表生成時間：2026-06-25 09:29:36</div>
     
     <div class="chart-container">
         <canvas id="weatherChart"></canvas>
@@ -83,7 +83,7 @@
             </tr>
         </thead>
         <tbody>
-            <tr><td>06/24 18:00</td><td>29 °C</td><td>84 %</td></tr><tr><td>06/24 19:00</td><td>28 °C</td><td>85 %</td></tr><tr><td>06/24 20:00</td><td>28 °C</td><td>86 %</td></tr><tr><td>06/24 21:00</td><td>28 °C</td><td>88 %</td></tr><tr><td>06/24 22:00</td><td>27 °C</td><td>90 %</td></tr><tr><td>06/24 23:00</td><td>27 °C</td><td>91 %</td></tr><tr><td>06/25 00:00</td><td>27 °C</td><td>92 %</td></tr><tr><td>06/25 01:00</td><td>27 °C</td><td>94 %</td></tr><tr><td>06/25 02:00</td><td>27 °C</td><td>95 %</td></tr><tr><td>06/25 03:00</td><td>26 °C</td><td>95 %</td></tr><tr><td>06/25 04:00</td><td>26 °C</td><td>95 %</td></tr><tr><td>06/25 05:00</td><td>26 °C</td><td>95 %</td></tr>
+            <tr><td>06/25 06:00</td><td>27 °C</td><td>94 %</td></tr><tr><td>06/25 07:00</td><td>28 °C</td><td>92 %</td></tr><tr><td>06/25 08:00</td><td>29 °C</td><td>90 %</td></tr><tr><td>06/25 09:00</td><td>29 °C</td><td>87 %</td></tr><tr><td>06/25 10:00</td><td>30 °C</td><td>83 %</td></tr><tr><td>06/25 11:00</td><td>31 °C</td><td>79 %</td></tr><tr><td>06/25 12:00</td><td>31 °C</td><td>80 %</td></tr><tr><td>06/25 13:00</td><td>31 °C</td><td>80 %</td></tr><tr><td>06/25 14:00</td><td>30 °C</td><td>80 %</td></tr><tr><td>06/25 15:00</td><td>30 °C</td><td>81 %</td></tr><tr><td>06/25 16:00</td><td>30 °C</td><td>82 %</td></tr><tr><td>06/25 17:00</td><td>29 °C</td><td>82 %</td></tr>
         </tbody>
     </table>
 </div>
@@ -93,11 +93,11 @@ const ctx = document.getElementById('weatherChart').getContext('2d');
 new Chart(ctx, {
     type: 'line',
     data: {
-        labels: ["06/24 18:00", "06/24 19:00", "06/24 20:00", "06/24 21:00", "06/24 22:00", "06/24 23:00", "06/25 00:00", "06/25 01:00", "06/25 02:00", "06/25 03:00", "06/25 04:00", "06/25 05:00"],
+        labels: ["06/25 06:00", "06/25 07:00", "06/25 08:00", "06/25 09:00", "06/25 10:00", "06/25 11:00", "06/25 12:00", "06/25 13:00", "06/25 14:00", "06/25 15:00", "06/25 16:00", "06/25 17:00"],
         datasets: [
             {
                 label: '溫度 (°C)',
-                data: [29, 28, 28, 28, 27, 27, 27, 27, 27, 26, 26, 26],
+                data: [27, 28, 29, 29, 30, 31, 31, 31, 30, 30, 30, 29],
                 borderColor: '#E67E22',
                 backgroundColor: 'rgba(230, 126, 34, 0.1)',
                 borderWidth: 3,
@@ -107,7 +107,7 @@ new Chart(ctx, {
             },
             {
                 label: '相對濕度 (%)',
-                data: [84, 85, 86, 88, 90, 91, 92, 94, 95, 95, 95, 95],
+                data: [94, 92, 90, 87, 83, 79, 80, 80, 80, 81, 82, 82],
                 borderColor: '#3498DB',
                 backgroundColor: 'rgba(52, 152, 219, 0.05)',
                 borderWidth: 3,
